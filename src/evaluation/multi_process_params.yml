@@ -1,0 +1,14 @@
+multi_process:
+    script_path: "/Users/rockwell/Documents/python/ZS-N2N/src/evaluation/train.py"
+    training_config: /Users/rockwell/Documents/python/ZS-N2N/src/evaluation/train_params.yml
+    gpus: None
+    num_workers: 1
+    log_dir: "/Users/rockwell/Documents/python/ZS-N2N/experiments/"
+    noise_type: "white"
+    noise_path: "/Users/rockwell/Documents/python/ZS-N2N/data/source/urban"
+    noise_samples: 1
+    clean_path: "/Users/rockwell/Documents/python/ZS-N2N/data/source/clean"
+    clean_samples: 1
+    is_test: True
+    # snr_levels: [-10, -5, 0, 5, 10]
+    snr_levels: [0]

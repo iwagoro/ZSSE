@@ -1,0 +1,24 @@
+data:
+    n_fft: 1022
+    hop_length: 256
+    sample_rate: 48000
+
+model:
+    input_channels: 1
+    embed_dim: 64
+
+training:
+    batch_size: 1
+    max_epoch: 1000
+    loss:
+        type: "MSELoss"
+    optimizer:
+        type: "Adam"
+        params:
+            lr: 1e-4
+    scheduler:
+        type: "OneCycleLR"
+        params:
+            steps_per_epoch: 1
+            epochs: 1000
+            max_lr: 1e-3
